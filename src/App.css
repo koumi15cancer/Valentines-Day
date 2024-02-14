@@ -1,3 +1,16 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+  background-image: url(https://i.pinimg.com/originals/7f/6f/47/7f6f477a94cd68fa4f441457af4c8ca1.gif)
+}
+.gif {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
 .valentine-container {
   display: flex;
   justify-content: center;
@@ -7,36 +20,42 @@
 }
 /* Custom class for Yes button styles */
 .yes-button {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #a7efb8; /* bg-green-500 */
-  color: #fff; /* text-white */
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: rgba(91, 173, 254, 0.46) ; /* bg-green-500 */
+  color: #EEF5FF; /* text-white */
   font-weight: bold; /* font-bold */
   padding: 8px 16px; /* py-2 px-4 */
-  border-radius: 8px; /* rounded */
+  border-radius: 16px; /* rounded */
   margin-right: 8px; /* mr-4 */
+
+
 }
 
 .yes-button:hover {
-  background-color: #4f7457; /* hover:bg-green-700 */
+  background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
 }
 
 /* Custom class for No button styles */
 .no-button {
-  background-color: #c90d0d; /* bg-red-500 */
-  color: #fff; /* text-white */
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #FF8080; /* bg-red-500 */
+  color: #EEF5FF; /* text-white */
   font-weight: bold; /* font-bold */
   padding: 8px 16px; /* py-2 px-4 */
-  border-radius: 8px; /* rounded */
+  border-radius: 16px; /* rounded */
 }
 
 .no-button:hover {
-  background-color: #c82333; /* hover:bg-red-700 */
+  background: linear-gradient(108.4deg, rgb(253, 44, 56) 3.3%, rgb(176, 2, 12) 98.4%);
+
 }
 /* Custom class for text-4xl my-4 container */
 .text-container {
+  border-radius: 25px;
   font-size: 2.25rem; /* Equivalent to text-4xl in tailwindcss */
   margin-top: 1rem; /* Equivalent to my-4 in tailwindcss */
   margin-bottom: 1rem; /* Equivalent to my-4 in tailwindcss */
+  font-family: "Comic Sans MS", cursive;
 }
 
 .centered-container {
@@ -50,10 +69,6 @@
   margin: 0;
 }
 
-.github-link {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: #007bff; /* Set the color as needed */
-  text-decoration: none;
-}
+
+/*  Customer button */
+
